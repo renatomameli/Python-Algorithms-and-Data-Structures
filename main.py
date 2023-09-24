@@ -1,14 +1,17 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+from data_structures.linked_list import LinkedList
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+def linked_list():
+    my_list = LinkedList()
+    my_list.display()
+    my_list.append(0)
+    my_list.append(1)
+    my_list.append(2)
+    my_list.append(3)
+    my_list.display()
+    my_list.deleteAt(0)
+    my_list.display()
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    linked_list()
